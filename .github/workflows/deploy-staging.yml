@@ -1,0 +1,50 @@
+name: deploy-staging
+
+# Deploys main to the Netlify staging site after every push to main.
+# XLflow waits for this workflow: STAGING_DEPLOY_WORKFLOW = deploy-staging.
+# Needs the repository secret NETLIFY_AUTH_TOKEN.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-staging
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      ASTRO_TELEMETRY_DISABLED: "1"
+      NETLIFY_SITE_ID: c66d3c37-f487-4104-a801-5750b927511a
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Content check and build
+        run: npm run build
+      - name: Check the Netlify token is set
+        run: |
+          if [ -z "$NETLIFY_AUTH_TOKEN" ]; then
+            echo "::error::Repository secret NETLIFY_AUTH_TOKEN is missing (Settings → Secrets and variables → Actions)."
+            exit 1
+          fi
+      - name: Deploy to Netlify
+        run: npx --yes netlify-cli@27.4.2 deploy --prod --dir=dist --site="$NETLIFY_SITE_ID" --message="main ${GITHUB_SHA::7}"
+      - name: Confirm staging serves this commit
+        run: |
+          for i in $(seq 1 12); do
+            if curl -fsS https://weisiger-test.netlify.app/ | grep -q "name=\"build-sha\" content=\"$GITHUB_SHA\""; then
+              echo "Staging is serving $GITHUB_SHA"; exit 0
+            fi
+            sleep 5
+          done
+          echo "::warning::Deployed, but https://weisiger-test.netlify.app/ did not show build-sha $GITHUB_SHA (password protection may still be on)."
