@@ -42,8 +42,17 @@ const footerHead = 'font-size: 12px; letter-spacing: 0.06em; text-transform: upp
     <a href="/" style="display: flex; align-items: center;" aria-label={c.nav.homeLabel}>
       <img src="/weisiger_dark.svg" alt={c.nav.logoAlt} style="height: 40px; width: auto; display: block;">
     </a>
-    <div style="display: flex; flex-wrap: wrap; gap: 22px; margin-left: 20px; font-size: 14px; font-weight: 500; flex: 1 1 auto;">
-      {c.nav.links.map((l) => <a href={l.href} style="color: #2D3748;">{l.label}</a>)}
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 22px; margin-left: 20px; font-size: 14px; font-weight: 500; flex: 1 1 auto;">
+      {c.nav.links.map((l) => {
+        const hasMenu = /\s*\u2304$/.test(l.label);
+        const label = l.label.replace(/\s*\u2304$/, '');
+        return (
+          <a href={l.href} style="color: #2D3748; display: inline-flex; align-items: center; gap: 6px; line-height: 1;">
+            {label}
+            {hasMenu && <svg aria-hidden="true" width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="display: block; flex: none;"><path d="M2 3.5l3 3 3-3"/></svg>}
+          </a>
+        );
+      })}
     </div>
     <div style="display: flex; align-items: center; gap: 16px; font-size: 14px; font-weight: 500;">
       <a href={c.nav.vendor.href} style="color: #2D3748;">{c.nav.vendor.label}</a>
