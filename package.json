@@ -1,0 +1,16 @@
+{
+  "name": "weisiger-test",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "check:content": "node scripts/check-content.mjs",
+    "dev": "astro dev",
+    "build": "node scripts/check-content.mjs && astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "5.18.2"
+  }
+}
