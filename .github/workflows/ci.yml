@@ -1,0 +1,26 @@
+name: ci
+
+# Runs the content check and the site build on every pull request and on main.
+# XLflow reads this job's result by its name: CI_CHECK_NAME = build.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      ASTRO_TELEMETRY_DISABLED: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Content check and build
+        run: npm run build
