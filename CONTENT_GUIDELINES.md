@@ -73,7 +73,7 @@ A `href` must be `#`, `#section`, `/path`, `https://…` or `mailto:…`. No `ht
 ## Checking a change
 
 ```bash
-npm ci
+npm install
 npm run check:content   # content rules only
 npm run build           # content rules + full site build
 ```

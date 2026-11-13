@@ -11,7 +11,7 @@ and applied by an agent that edits only that file (see `CONTENT_GUIDELINES.md`).
 ## Run it
 
 ```bash
-npm ci
+npm install
 npm run dev        # local preview at http://localhost:4321
 npm run build      # content check + static build into dist/
 ```
