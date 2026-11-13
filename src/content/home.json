@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "title": "Weisiger Group · A trusted partner in your success",
+    "description": "Weisiger Group is the Charlotte-based, family-owned parent of Carolina Cat, Carolina Cat Power Systems, LiftOne and more, serving the Southeast since 1926."
+  },
+  "nav": {
+    "homeLabel": "Weisiger Group home",
+    "logoAlt": "Weisiger",
+    "links": [
+      { "label": "Who we are ⌄", "href": "#" },
+      { "label": "Our companies ⌄", "href": "#" },
+      { "label": "Our impact", "href": "#" },
+      { "label": "News", "href": "#" }
+    ],
+    "vendor": { "label": "Become a vendor", "href": "#" },
+    "cta": { "label": "Join our team", "href": "#" }
+  },
+  "hero": {
+    "eyebrow": "Equipment · Power · Material handling · Technology",
+    "title": "The family of companies keeping the Southeast",
+    "titleHighlight": "built, powered and moving",
+    "body": "For nearly 100 years, Weisiger Group has helped customers across five states succeed, with integrity, attention to detail and a promise kept every time.",
+    "primaryCta": { "label": "Explore our companies", "href": "#companies" },
+    "secondaryCta": { "label": "Our story", "href": "#" },
+    "headquarters": {
+      "label": "Headquarters",
+      "value": "Charlotte, North Carolina",
+      "note": "Family-owned since 1926"
+    },
+    "region": {
+      "label": "Region served",
+      "states": ["NC", "SC", "GA", "TN", "AL"],
+      "note": "8 operating companies"
+    },
+    "years": {
+      "value": "~100",
+      "line1": "years of making",
+      "line2": "a strong impression"
+    }
+  },
+  "companies": {
+    "title": "Our",
+    "titleHighlight": "Companies",
+    "carolinaCat": {
+      "eyebrow": "Caterpillar dealer",
+      "name": "Carolina Cat",
+      "body": "Equipment sales, rental, product support and site technology that help customers finish projects safely, on time and on budget, across Western North Carolina.",
+      "link": { "label": "Visit Carolina Cat", "href": "#" },
+      "offerLabel": "What we offer",
+      "offers": ["Sales", "Rental", "Product support", "Site technology"],
+      "rentals": {
+        "name": "Carolina Cat Rentals",
+        "badge": "8 locations",
+        "title": "Cat machines, aerial lifts, lift trucks and power generation",
+        "area": "Western North Carolina"
+      }
+    },
+    "powerSystems": {
+      "eyebrow": "Distributed power",
+      "name": "Carolina Cat Power Systems",
+      "body": "Power generation, electrical controls and testing for facilities, venues and contractors, backed by parts, service and flexible rental from Cat and allied brands.",
+      "link": { "label": "Visit Power Systems", "href": "#" },
+      "panelLabel": "Power solutions",
+      "solutions": [
+        { "name": "Power generation", "services": "Sales · Rental" },
+        { "name": "Electrical controls", "services": "Parts · Service" },
+        { "name": "Testing", "services": "Service" }
+      ],
+      "expanding": {
+        "label": "Now expanding",
+        "title": "Alternative energy",
+        "body": "More sustainable power for facilities and venues"
+      },
+      "rental": { "text": "Short- and long-term", "emphasis": "rental" }
+    },
+    "liftOne": {
+      "eyebrow": "Material handling",
+      "name": "LiftOne",
+      "body": "A full-service material handling dealer for Hyster, Yale, Combilift, Genie, JLG and more, with a team of over 500 trained technicians.",
+      "link": { "label": "Visit LiftOne", "href": "#" },
+      "locationsLabel": "Locations by state",
+      "locationsTotal": "20",
+      "states": [
+        { "state": "NC", "barPercent": 100 },
+        { "state": "SC", "barPercent": 75 },
+        { "state": "GA", "barPercent": 55 },
+        { "state": "TN", "barPercent": 45 },
+        { "state": "AL", "barPercent": 35 }
+      ],
+      "barsNote": "[Bar lengths illustrative: replace with real counts per state]",
+      "technicians": { "value": "500+", "label": "service technicians" }
+    },
+    "more": {
+      "title": "More from the family",
+      "linkLabel": "Visit site ↗",
+      "items": [
+        { "name": "Carolina Cat Rentals", "description": "Industrial, commercial and construction rental from eight Western NC locations.", "href": "#" },
+        { "name": "Prime Source", "description": "Parts and undercarriage support for every make of machine.", "href": "#" },
+        { "name": "Hydraulics Express", "description": "Cylinder, pump and motor repair with contamination control.", "href": "#" },
+        { "name": "SITECH Horizon", "description": "Cat and Trimble construction technology for heavy and highway contractors.", "href": "#" },
+        { "name": "BlueSkye Automation", "description": "Turnkey warehouse automation for productivity, accuracy and safety.", "href": "#" }
+      ]
+    }
+  },
+  "why": {
+    "title": "Why",
+    "titleHighlight": "Weisiger",
+    "story": {
+      "title": "A family business since 1926",
+      "body": "Formerly CTE, Weisiger Group has grown from one Carolinas dealership into a family of companies. Our reputation is earned through actions, commitment and dedication, every day.",
+      "link": { "label": "Read our story", "href": "#" },
+      "year": "1926",
+      "yearCaption": "the year our family started serving the Carolinas"
+    },
+    "community": {
+      "title": "Building our communities",
+      "body": "From supplying equipment for critical infrastructure to giving and volunteering, we are invested in the future of our five-state region.",
+      "points": [
+        "Facility construction and support",
+        "Educational opportunities and technical training",
+        "Employee giving and volunteerism"
+      ],
+      "cta": { "label": "Request community support", "href": "#" }
+    },
+    "cares": {
+      "badge": "Weisiger Group Cares",
+      "title": "Hurricane Helene relief",
+      "body": "Help us help those in need across Western North Carolina. See the impact so far and how you can contribute.",
+      "cta": { "label": "Donate today", "href": "#" }
+    }
+  },
+  "careers": {
+    "title": "Be part of something special",
+    "body": "We are more than a group of people working together. We are a family that supports, challenges and makes each other better.",
+    "primaryCta": { "label": "See open roles", "href": "#" },
+    "secondaryCta": { "label": "Life at Weisiger", "href": "#" }
+  },
+  "news": {
+    "title": "Check out our News",
+    "cta": { "label": "Go to News", "href": "#" },
+    "imageLabel": "weisiger news.",
+    "readMore": "Read more ↗",
+    "items": [
+      { "tag": "Recognition", "title": "Weisiger Group named a US Best Managed Company Gold Standard winner", "href": "#" },
+      { "tag": "Safety", "title": "Weisiger Group adopts a Cardiac Emergency Response Plan with the American Heart Association", "href": "#" },
+      { "tag": "Community", "title": "Amplifying Hurricane Helene relief through Weisiger Group Cares", "href": "#" }
+    ]
+  },
+  "footer": {
+    "logoAlt": "Weisiger",
+    "tagline": "A trusted partner in your success.",
+    "columns": [
+      {
+        "title": "Company",
+        "links": [
+          { "label": "Who we are", "href": "#" },
+          { "label": "Our companies", "href": "#" },
+          { "label": "Our impact", "href": "#" },
+          { "label": "News", "href": "#" }
+        ]
+      },
+      {
+        "title": "Work with us",
+        "links": [
+          { "label": "Join our team", "href": "#" },
+          { "label": "Become a vendor", "href": "#" },
+          { "label": "Vendor code of conduct", "href": "#" },
+          { "label": "Tax exemption", "href": "#" }
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          { "label": "Corporate social responsibility report", "href": "#" },
+          { "label": "Celebrating 95 years", "href": "#" }
+        ]
+      }
+    ],
+    "copyright": "© 2026 Weisiger Group. All rights reserved.",
+    "legal": [
+      { "label": "Privacy", "href": "#" },
+      { "label": "Legal notice", "href": "#" },
+      { "label": "Cookie policy", "href": "#" }
+    ]
+  }
+}
